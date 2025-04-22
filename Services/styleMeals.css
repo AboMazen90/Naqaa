@@ -1,0 +1,109 @@
+/* تنسيق القائمة العلوية */
+header {
+    background-color: #0077b6;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;  /* محاذاة العناصر في الوسط */
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 10px 15px;  /* إضافة padding لتحسين المظهر */
+    transition: background-color 0.3s;
+    border-radius: 5px;   /* إضافة حواف مستديرة للعناصر */
+}
+
+header nav a:hover {
+    background-color: #ffd166;  /* تغيير لون الخلفية عند التمرير */
+    color: #333;  /* تغيير لون النص عند التمرير */
+}
+/* استايل صفحة الوجبات الصحية */
+.meals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.meal-box {
+    display: flex;
+    justify-content: center; /* توسيط النص أفقيًا */
+    align-items: center;     /* توسيط النص عموديًا */
+    width: 250px;
+    height: 250px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.meal-box span {
+    display: block;
+    font-size: 16px;  /* تحسين حجم الخط ليكون أكثر وضوحًا */
+}
+
+/* تخصيص الألوان للمربعات */
+.meal-box.protein {
+    background-color: #4CAF50; /* اللون الأخضر للبروتين */
+}
+
+.meal-box.carbs {
+    background-color: #FF9800; /* اللون البرتقالي للكربوهيدرات */
+}
+
+.meal-box.fats {
+    background-color: #9C27B0; /* اللون البنفسجي للدهون الصحية */
+}
+
+.meal-box.veggies {
+    background-color: #8BC34A; /* اللون الأخضر للخضروات */
+}
+
+.meal-box.drinks {
+    background-color: #2196F3; /* اللون الأزرق للمشروبات الصحية */
+}
+
+/* تأثير hover للمربعات */
+.meal-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+/* تنسيق العنوان داخل قسم خطط التغذية */
+#meals h2 {
+    text-align: center;  /* توسيط النص */
+    color: #0077b6; /* نفس اللون الذي تم استخدامه في العناوين الأخرى */
+    font-size: 30px;  /* تكبير حجم الخط إذا كنت ترغب */
+    margin-bottom: 30px; /* إضافة مسافة أسفل العنوان */
+}
+footer {
+    background-color: #e9ecef;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #666;
+}
